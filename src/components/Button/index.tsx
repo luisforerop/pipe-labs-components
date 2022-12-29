@@ -43,7 +43,7 @@ export const Button = ({
       width={isFullWidth ? '100%' : 'auto'}
       onClick={onClick}
     >
-      {isLoading ? loadingMessage ?? 'Cargando...' : children}
+      {isLoading ? loadingMessage || 'Cargando...' : children}
     </StyledButton>
   )
 }
