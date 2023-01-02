@@ -1,14 +1,37 @@
 {
-  "name": "simple-components",
+  "name": "@mr-components/simple-components",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "license": "MIT",
   "type": "module",
+  "typings": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "homepage": "https://www.mr-components.com/",
+  "repository": {
+    "url": "https://github.com/luisforerop/simple-components",
+    "type": "git"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "dev": "vite",
     "build:vite": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build": "build-storybook"
+    "build:storybook": "build-storybook -o docs",
+    "build": "yarn clean && tsc",
+    "clean": "rimraf dist/"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "typescript": ">=4.0.0"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -29,6 +52,7 @@
     "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^3.0.0",
     "babel-loader": "^8.3.0",
+    "rimraf": "^3.0.2",
     "typescript": "^4.9.3",
     "typescript-styled-plugin": "^0.18.2",
     "vite": "^4.0.0"
