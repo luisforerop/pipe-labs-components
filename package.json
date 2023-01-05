@@ -1,6 +1,6 @@
 {
   "name": "pipe-labs-components",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "license": "MIT",
   "type": "module",
@@ -8,7 +8,7 @@
   "main": "dist/index.js",
   "homepage": "https://www.mr-components.com/",
   "repository": {
-    "url": "https://github.com/luisforerop/pipe-labs-components4",
+    "url": "https://github.com/luisforerop/pipe-labs-components",
     "type": "git"
   },
   "keywords": [
