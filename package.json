@@ -1,15 +1,28 @@
 {
-  "name": "@mr-components/simple-components",
+  "name": "pipe-labs-components",
+  "version": "0.1.3",
   "private": false,
-  "version": "0.1.0",
   "license": "MIT",
   "type": "module",
   "typings": "dist/index.d.ts",
   "main": "dist/index.js",
   "homepage": "https://www.mr-components.com/",
   "repository": {
-    "url": "https://github.com/luisforerop/simple-components",
+    "url": "https://github.com/luisforerop/pipe-labs-components4",
     "type": "git"
+  },
+  "keywords": [
+    "mr-components",
+    "react",
+    "nodejs",
+    "storybook",
+    "jest",
+    "typescript"
+  ],
+  "author": "@luis_forerop",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "release": {
     "branches": [
