@@ -38,9 +38,11 @@
     "build:vite": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook -o docs && yarn fix:docs",
+    "build:sb": "build-storybook -o docs && yarn fix:docs",
+    "build:sb/gh-pages": "build-storybook -o docs && yarn fix:docs/gh-pages",
     "build": "yarn clean && tsc",
     "fix:docs": "node fixer",
+    "fix:docs/gh-pages": "node fixer -e gh-pages",
     "clean": "rimraf dist/",
     "clean:removeIframe": "rimraf docs/iframeToDelete.html"
   },
@@ -51,8 +53,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^5.3.6",
-    "typescript": ">=4.0.0"
+    "styled-components": "^5.3.6"
   },
   "plugins": [
     "@semantic-release/commit-analyzer",
@@ -80,6 +81,7 @@
     "semantic-release": "^19.0.5",
     "typescript": "^4.9.3",
     "typescript-styled-plugin": "^0.18.2",
-    "vite": "^4.0.0"
+    "vite": "^4.0.0",
+    "yargs": "^17.6.2"
   }
 }
